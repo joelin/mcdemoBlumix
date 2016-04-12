@@ -1,0 +1,11 @@
+applications:
+- path: target/webcat.war
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: mcdemo
+  host: mcdemo
+  disk_quota: 1024M
+  services:
+  - mysqlserver
+  - Redis Cloud-qd
