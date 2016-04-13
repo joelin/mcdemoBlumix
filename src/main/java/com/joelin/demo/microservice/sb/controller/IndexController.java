@@ -27,6 +27,12 @@ public class IndexController {
 		return "login.jsp";
 	}
 	
+	@RequestMapping(value="logout",method=RequestMethod.GET)
+	public String logout(RedirectAttributes redirect){
+		CurrentUserUtils.getInstance().removeUser();
+		return "redirect:/login";
+	}
+	
 
 	@RequestMapping(value="login",method=RequestMethod.POST)
 	public String login(UserEntity user, RedirectAttributes redirect){

@@ -53,6 +53,11 @@ public class CurrentUserUtils {
 		return (String)getSession().getAttribute(CUR_USER_ID);
 	}
 
+	public void removeUser(){
+		getSession().removeAttribute(CUR_USER_ID);
+		getSession().removeAttribute(CUR_USER_NAME);
+	}
+	
 	public void setUser(UserEntity user){
 		getSession().setAttribute(CUR_USER_ID, String.valueOf(user.getId()));
 		getSession().setAttribute(CUR_USER_NAME, user.getName());

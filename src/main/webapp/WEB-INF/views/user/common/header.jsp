@@ -17,7 +17,7 @@
         <li class="active"><a href="/user/home">Home</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-         <li><span class="nav-span">欢迎, ${cur_user_name}</span></li>
+         <li><span class="nav-span">欢迎, ${cur_user_name}|<a href="/logout">登出</a></span></li>
        </ul>
     </div><!--/.nav-collapse -->
   </div>
