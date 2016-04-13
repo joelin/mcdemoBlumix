@@ -50,3 +50,15 @@ applications:
 
 ###接着根据cf指令推送应用，等待应用部署完成
 > cf push
+
+
+##redis操作
+
+*add the value joelin to key "foo"
+`http://localhost:port/addRedis?value=joelin`
+
+*list all keys
+`http://localhost:port/listRedis`
+
+*del key by keyID
+`http://localhost:port/delRedis?key=foo`
