@@ -11,7 +11,7 @@
 
 ```
 spring.cloud.appId: microserviceLocal
-spring.cloud.database: mysql://root:admin123@172.17.254.218:3306/test
+spring.cloud.database: mysql://root:pass@x.x.x.x:3306/test
 
 spring.jpa.hibernate.ddl-auto=create
 spring.jpa.show-sql=true
